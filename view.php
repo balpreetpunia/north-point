@@ -76,7 +76,7 @@ $count = $sth->rowCount();
                     <td><?php $date = date_create($avail['last_updated']); echo date_format($date, 'g:i:s A');?></td>
                 </tr>
             <?php endforeach ?>
-            <tr><td>Total : <?=$total?></td></tr>
+            <tr style="position: fixed;width: 100%;bottom: 0;background-color: lightgray;border: solid 1px;left: 0;"><td style="left: 50%;position: relative;">Total : <?=$total?></td></tr>
             </tbody>
         </table>
     </div>
